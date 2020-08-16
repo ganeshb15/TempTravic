@@ -10,8 +10,9 @@ before_install:
 
 install:
   - pip install selenium
+  - mkdir driver
   - wget https://chromedriver.storage.googleapis.com/2.35/chromedriver_linux64.zip
-  - unzip chromedriver_linux64.zip -d test/driver/
+  - unzip chromedriver_linux64.zip -d driver
 
 script:
   - python 1.py
