@@ -1,4 +1,4 @@
-langulanguage: python
+language: python
 python:
   - "3.5"
 dist: xenial
@@ -17,4 +17,4 @@ install:
   - unzip chromedriver_linux64.zip -d driver
 
 script:
-  - python 1.py
+  - pwd
