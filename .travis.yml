@@ -1,13 +1,15 @@
-language: python
+langulanguage: python
 python:
-- "3.5"
-install:
-  - pip install selenium
+  - "3.5"
 dist: xenial
 addons:
   chrome: stable
 before_install:
- - # start your web application and listen on `localhost`
- - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
- script:
+  - # start your web application and listen on `localhost`
+  - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
+
+install:
+  - pip install selenium
+
+script:
   - python 1.py
